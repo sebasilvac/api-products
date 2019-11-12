@@ -9,7 +9,7 @@ import SimulateError from '../utils/SimulateError';
 const util = new Util();
 const simulateError = new SimulateError();
 
-const redisClient = redis.createClient(6379, 'ssilva-redis-001.qy0kin.0001.usw2.cache.amazonaws.com');
+const redisClient = redis.createClient(6379);
 
 redisClient.on('connect', function() {
     console.log('Conectado a Redis Server');
