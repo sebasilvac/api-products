@@ -14,7 +14,7 @@ const app = express();
 //     next();
 // });
 
-const allowedOrigins = ['http://34.217.106.68', 'http://localhost'];
+const allowedOrigins = ['http://34.217.106.68', 'http://localhost', 'http://localhost:3001'];
 
 app.use(cors({
   origin: function(origin, callback){
